@@ -25,6 +25,11 @@ const Whiteboard = () => {
     setToggleListOfSavedCanvas(!toggleListOfSavedCanvas);
   }
 
+  const clearCanvas = () => {
+    setElements([]);
+    setSelectedElement(null);
+  }
+
   return (
     <div className="container">
       <div className="panel-menu-wrapper">
@@ -51,7 +56,7 @@ const Whiteboard = () => {
         />
         <Tools
           setTool={handleChangeTool}
-          setElements={setElements}
+          clearCanvas={clearCanvas}
           saveCanvas={saveCanvas}
           toggleListOfCanvas={handleToggleListOfCanvas}
           checked={tool}
