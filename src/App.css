@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: rgb(53, 56, 61);
+  color: white
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+
+.panel-menu-wrapper {
+  width: 20%;
+  background-color: rgb(46, 50, 53);
+  border-right: 4px solid rgb(43, 46, 51)
+}
+
+.canvas-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.tools {
+  display: flex;
+  gap: 1rem;
+  background-color: rgb(74, 77, 82);
+  padding: .5rem
+}
+
+.tools button {
+  color: white;
+  padding: .5rem 1rem;
+  background-color: rgb(39, 40, 42);
+  border: none;
+  text-transform: capitalize;
+  border-radius: .25rem;
+}
+
+.tools .edit-canvas {
+  background-color: rgb(111, 132, 177);
+  color: black
+}
+
+.tools button:active {
+  transform: translate(1px, 1px);
+}
